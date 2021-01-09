@@ -55,6 +55,7 @@ and enter
  
  if facebook auth is not working with above guileline then use react native social auth https://rnfirebase.io/auth/social-auth
 
+https://reactnative.dev/docs/signed-apk-android // to generate apk file
 
 go into your project directory > android > app > build > outputs > apk > release // to find your apk file
 
