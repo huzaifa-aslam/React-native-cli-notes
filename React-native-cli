@@ -1,0 +1,62 @@
+npx react-native run-android // to run app 
+
+https://reactnavigation.org/docs/getting-started       // navigation 
+
+https://react-native-camera.github.io/react-native-camera/docs/installation.html // react native camera
+https://github.com/react-native-camera/react-native-camera/blob/master/docs/RNCamera.md  // react native camera usage
+
+add permission if needed for using camera
+
+gradlew clean // to clear chache
+
+https://github.com/react-native-image-picker/react-native-image-picker/tree/2.3.4 // image picker
+
+*********firebase*********
+
+https://rnfirebase.io/ // to firebase
+
+android > app > src > main > AndroidMenifest.xml copy pakcage = "com.projectName"
+
+paste into Register app
+
+note -- we cant use native firabsae database in expo we have to use web firebase database in expo
+
+<TextInput/> // get input from user
+
+react-native-fbsdk (https://github.com/facebook/react-native-fbsdk)  // facebook login
+
+ to generat hashes for fbauth download open ssl software
+
+ *******guileline for open ssl software***********
+ download open ssl software
+  extract 
+  copy openssl folder
+  paste inot C drive
+  go to bin folder
+  open terminal here
+enter given command 
+copy hashe command
+and enter 
+ 
+
+ then go to my App and complete configuration
+
+ then add  function LoginManager  https://github.com/facebook/react-native-fbsdk
+
+ then add  function AccessToken  to get user data
+
+ AccessToken.getCurrentAccessToken()
+ .then((data)=>{
+   fetch(`https://graph.facebook.com/v2.5/me?fields=email,name${data.accessToken}`)
+ })
+ .then((user)=>{
+   console.log("user",user)
+ })
+ 
+ if facebook auth is not working with above guileline then use react native social auth https://rnfirebase.io/auth/social-auth
+
+
+go into your project directory > android > app > build > outputs > apk > release // to find your apk file
+
+
+expo build android // generat apk file in expo 
