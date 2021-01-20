@@ -1,3 +1,5 @@
+*********React Native Cli*********************
+
 npx react-native run-android // to run app 
 
 https://reactnavigation.org/docs/getting-started       // navigation 
